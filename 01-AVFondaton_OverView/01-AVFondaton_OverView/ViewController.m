@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation ViewController
 
@@ -14,6 +15,7 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    [self p_speechVoice];
 }
 
 
@@ -21,6 +23,12 @@
     [super setRepresentedObject:representedObject];
 
     // Update the view, if already loaded.
+}
+/** 文字到语音 */
+- (void)p_speechVoice{
+    NSSpeechSynthesizer *speech = [NSSpeechSynthesizer new];
+    [speech startSpeakingString:@"Hello"];
+    
 }
 
 
