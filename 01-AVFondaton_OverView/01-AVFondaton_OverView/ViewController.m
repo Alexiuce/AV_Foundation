@@ -27,6 +27,9 @@
 /** 文字到语音 */
 - (void)p_speechVoice{
     NSSpeechSynthesizer *speech = [NSSpeechSynthesizer new];
+    /** 设置播放声音 */
+    [speech setVoice:@"com.apple.speech.synthesis.voice.sara"];
+    NSLog(@"%@",NSSpeechSynthesizer.availableVoices);
     [speech startSpeakingString:@"Hello"];
     
 }
