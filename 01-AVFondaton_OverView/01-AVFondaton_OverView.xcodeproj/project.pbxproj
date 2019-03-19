@@ -12,6 +12,9 @@
 		D83CFBC0223B766000BF92EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83CFBBF223B766000BF92EC /* Assets.xcassets */; };
 		D83CFBC3223B766000BF92EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83CFBC1223B766000BF92EC /* Main.storyboard */; };
 		D83CFBC6223B766000BF92EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CFBC5223B766000BF92EC /* main.m */; };
+		D87BD28E22407F8C00EF9A01 /* tinkling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87BD28B22407F8B00EF9A01 /* tinkling.mp3 */; };
+		D87BD28F22407F8C00EF9A01 /* comedy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87BD28C22407F8B00EF9A01 /* comedy.mp3 */; };
+		D87BD29022407F8C00EF9A01 /* dada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D87BD28D22407F8C00EF9A01 /* dada.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		D83CFBC4223B766000BF92EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D83CFBC5223B766000BF92EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D83CFBC7223B766000BF92EC /* _1_AVFondaton_OverView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _1_AVFondaton_OverView.entitlements; sourceTree = "<group>"; };
+		D87BD28B22407F8B00EF9A01 /* tinkling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tinkling.mp3; sourceTree = "<group>"; };
+		D87BD28C22407F8B00EF9A01 /* comedy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = comedy.mp3; sourceTree = "<group>"; };
+		D87BD28D22407F8C00EF9A01 /* dada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dada.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 		D83CFBB8223B765F00BF92EC /* 01-AVFondaton_OverView */ = {
 			isa = PBXGroup;
 			children = (
+				D87BD28A22407F7500EF9A01 /* audio_resource */,
 				D83CFBB9223B765F00BF92EC /* AppDelegate.h */,
 				D83CFBBA223B765F00BF92EC /* AppDelegate.m */,
 				D83CFBBC223B765F00BF92EC /* ViewController.h */,
@@ -68,6 +75,16 @@
 				D83CFBC7223B766000BF92EC /* _1_AVFondaton_OverView.entitlements */,
 			);
 			path = "01-AVFondaton_OverView";
+			sourceTree = "<group>";
+		};
+		D87BD28A22407F7500EF9A01 /* audio_resource */ = {
+			isa = PBXGroup;
+			children = (
+				D87BD28C22407F8B00EF9A01 /* comedy.mp3 */,
+				D87BD28D22407F8C00EF9A01 /* dada.mp3 */,
+				D87BD28B22407F8B00EF9A01 /* tinkling.mp3 */,
+			);
+			path = audio_resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D83CFBC0223B766000BF92EC /* Assets.xcassets in Resources */,
+				D87BD29022407F8C00EF9A01 /* dada.mp3 in Resources */,
+				D87BD28F22407F8C00EF9A01 /* comedy.mp3 in Resources */,
 				D83CFBC3223B766000BF92EC /* Main.storyboard in Resources */,
+				D87BD28E22407F8C00EF9A01 /* tinkling.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

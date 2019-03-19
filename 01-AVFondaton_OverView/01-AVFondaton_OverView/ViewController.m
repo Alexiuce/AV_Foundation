@@ -22,8 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.layer.backgroundColor = NSColor.redColor.CGColor;
     // Do any additional setup after loading the view.
     [self p_speechVoice];
+    
+    AVAudioPlayer *p1 = [self playerWithFile:@"comdey"];
+    AVAudioPlayer *p2 = [self playerWithFile:@"dada"];
+    AVAudioPlayer *p3 = [self playerWithFile:@"tinkling"];
+    self.players = @[p1,p2,p3];
 }
 
 
@@ -32,6 +38,18 @@
 
     // Update the view, if already loaded.
 }
+#pragma mark - IBAction
+
+- (IBAction)clickedPlay:(NSButton *)sender {
+    [self audioPlay];
+}
+
+- (IBAction)clickedStop:(NSButton *)sender {
+    [self audioStop];
+}
+
+#pragma mark -
+
 /** 文字到语音 */
 - (void)p_speechVoice{
     NSSpeechSynthesizer *speech = [NSSpeechSynthesizer new];
