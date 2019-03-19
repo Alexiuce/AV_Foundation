@@ -9,6 +9,14 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
+
+@interface ViewController ()
+
+@property (nonatomic, assign) BOOL isPlaying;
+@property (nonatomic, strong) NSArray *players;
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -34,5 +42,36 @@
     
 }
 
+- (AVAudioPlayer *)playerWithFile:(NSString *)name{
+    NSURL *fileURL = [NSBundle.mainBundle URLForResource:name withExtension:@"mp3"];
+    NSError *error = nil;
+    AVAudioPlayer *player = [[AVAudioPlayer alloc]initWithContentsOfURL:fileURL error:&error];
+    if (player) {
+        player.numberOfLoops = -1;
+        player.enableRate = YES;
+        [player prepareToPlay];
+    }
+    return player;
+}
+
+- (void)audioPlay{
+    if (!self.isPlaying) {
+        NSTimeInterval delayTime = [self.players[0] deviceCurrentTime] + 0.01;
+        for (AVAudioPlayer *p in self.players) {
+            [p playAtTime:delayTime];
+        }
+        self.isPlaying = YES;
+    }
+}
+
+- (void)audioStop{
+    if (self.isPlaying) {
+        for (AVAudioPlayer *p in self.players) {
+            [p stop];
+            p.currentTime = 0;
+        }
+        self.isPlaying = NO;
+    }
+}
 
 @end
