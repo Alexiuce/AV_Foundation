@@ -688,7 +688,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -708,41 +708,6 @@
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0mj-sr-iRa">
-                                <rect key="frame" x="95" y="117" width="66" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="F6J-Ia-82s"/>
-                                </constraints>
-                                <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="a0F-lh-RsS">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="clickedPlay:" target="XfG-lQ-9wD" id="lch-3l-FBk"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Me9-x7-GI2">
-                                <rect key="frame" x="334" y="117" width="69" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="D5R-p8-kjD"/>
-                                </constraints>
-                                <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5e4-br-AmW">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="clickedStop:" target="XfG-lQ-9wD" id="rL1-xQ-mh0"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="0mj-sr-iRa" secondAttribute="bottom" constant="124" id="3yu-sm-0fI"/>
-                            <constraint firstAttribute="bottom" secondItem="Me9-x7-GI2" secondAttribute="bottom" constant="124" id="Dxp-hO-2LC"/>
-                            <constraint firstItem="Me9-x7-GI2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0mj-sr-iRa" secondAttribute="trailing" constant="12" symbolic="YES" id="SZi-dH-4xB"/>
-                            <constraint firstItem="0mj-sr-iRa" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="101" id="p8u-q1-A9r"/>
-                            <constraint firstAttribute="trailing" secondItem="Me9-x7-GI2" secondAttribute="trailing" constant="83" id="w1a-60-Xpq"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

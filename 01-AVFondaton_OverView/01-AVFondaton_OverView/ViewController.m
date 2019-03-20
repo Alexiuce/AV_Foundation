@@ -21,17 +21,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     self.view.layer.backgroundColor = NSColor.redColor.CGColor;
     // Do any additional setup after loading the view.
     [self p_speechVoice];
     
-    AVAudioPlayer *p1 = [self playerWithFile:@"comdey"];
+//
+    AVAudioPlayer *p1 = [self playerWithFile:@"comedy"];
     AVAudioPlayer *p2 = [self playerWithFile:@"dada"];
     AVAudioPlayer *p3 = [self playerWithFile:@"tinkling"];
     self.players = @[p1,p2,p3];
 }
 
+- (void)viewWillAppear{
+    [super viewWillAppear];
+    NSLog(@"%s",__func__);
+}
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
@@ -67,7 +71,7 @@
     if (player) {
         player.numberOfLoops = -1;
         player.enableRate = YES;
-        [player prepareToPlay];
+//        [player prepareToPlay];
     }
     return player;
 }
