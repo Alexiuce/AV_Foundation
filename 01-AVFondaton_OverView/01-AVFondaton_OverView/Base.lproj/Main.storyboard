@@ -708,6 +708,41 @@
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="axh-p8-kS1">
+                                <rect key="frame" x="87" y="125" width="80" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="bEg-LL-q32"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundRect" title="Round Rect" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yWK-Je-9EK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="cellTitle"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickedPlay:" target="XfG-lQ-9wD" id="KKG-2t-7gw"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Odu-Ai-iPQ">
+                                <rect key="frame" x="324" y="125" width="80" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="dLa-QF-XSK"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundRect" title="Round Rect" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="H3b-3H-t3Y">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="cellTitle"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickedStop:" target="XfG-lQ-9wD" id="1O2-0U-b7g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Odu-Ai-iPQ" secondAttribute="trailing" constant="76" id="17N-Oj-auk"/>
+                            <constraint firstItem="Odu-Ai-iPQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="axh-p8-kS1" secondAttribute="trailing" constant="8" symbolic="YES" id="Ngc-gZ-e5F"/>
+                            <constraint firstAttribute="bottom" secondItem="axh-p8-kS1" secondAttribute="bottom" constant="126" id="TBZ-vS-cX9"/>
+                            <constraint firstAttribute="bottom" secondItem="Odu-Ai-iPQ" secondAttribute="bottom" constant="126" id="aOF-Qn-7ah"/>
+                            <constraint firstItem="axh-p8-kS1" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="87" id="k9L-7S-jns"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.layer.backgroundColor = NSColor.redColor.CGColor;
+//    self.view.layer.backgroundColor = NSColor.redColor.CGColor;
     // Do any additional setup after loading the view.
     [self p_speechVoice];
     
@@ -71,7 +71,7 @@
     if (player) {
         player.numberOfLoops = -1;
         player.enableRate = YES;
-//        [player prepareToPlay];
+        [player prepareToPlay];
     }
     return player;
 }
